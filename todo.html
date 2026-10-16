@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>待办事项清单 Todo List</title>
+  <link rel="stylesheet" href="todo-style.css">
+</head>
+<body>
+
+  <div class="app">
+    <h1>我的待办清单</h1>
+
+    <!-- 添加任务：输入框 + 按钮 -->
+    <div class="add-box">
+      <input id="todo-input" placeholder="输入要做的事...">
+      <button id="add-btn">添加</button>
+    </div>
+
+    <!-- 任务列表：由 JS 动态生成 -->
+    <ul id="todo-list"></ul>
+
+    <!-- 底部统计 -->
+    <p id="stats">还没有任务</p>
+  </div>
+
+  <script src="todo.js"></script>
+</body>
+</html>

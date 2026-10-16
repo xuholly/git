@@ -1,0 +1,55 @@
+/* ==========================================
+   一、标签选择器：直接写标签名，作用于所有同名标签
+   下面这个 body 就是"标签选择器"，管整个页面
+   ========================================== */
+body {
+  background: #f5f7fb;                         /* 页面背景色 */
+  font-family: "Microsoft YaHei", sans-serif;  /* 字体 */
+  text-align: center;                          /* 文字水平居中 */
+  padding-top: 60px;                           /* 顶部留白 */
+}
+
+/* ==========================================
+   二、class 选择器：用 .类名 选中，只作用于加了该类名的元素
+   对应 HTML 里的 class="title" 这种
+   ========================================== */
+.title {
+  color: #4f7cff;      /* 文字颜色（十六进制色值） */
+  font-size: 40px;     /* 字号 */
+}
+
+.intro {
+  color: #666;
+  font-size: 18px;
+}
+
+.link {
+  color: #ff6b6b;
+  text-decoration: none;   /* 去掉链接默认的下划线 */
+  font-size: 18px;
+}
+
+.btn {
+  display: block;
+  margin: 20px auto;   /* 外边距：上下20px，左右 auto（自动=水平居中） */
+  padding: 12px 28px;  /* 内边距：上下12px，左右28px */
+  background: #4f7cff;
+  color: #ffffff;
+  border: none;        /* 去掉按钮默认边框 */
+  border-radius: 8px;  /* 圆角 */
+  font-size: 16px;
+  cursor: pointer;     /* 鼠标悬停时变成小手 */
+}
+
+/* ==========================================
+   三、盒子模型：每个元素都是一个"盒子"
+   从里到外：内容 → padding(内边距) → border(边框) → margin(外边距)
+   ========================================== */
+.box {
+  width: 320px;                 /* 盒子宽度 */
+  margin: 30px auto;            /* 外边距：上下30px，左右自动居中 */
+  padding: 24px;                /* 内边距：内容和边框之间的距离 */
+  border: 3px dashed #4f7cff;   /* 边框：3px 虚线 蓝色 */
+  border-radius: 12px;          /* 边框圆角 */
+  background: #ffffff;
+}

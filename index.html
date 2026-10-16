@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的第一个前端程序</title>
+  <!-- 引入样式表：负责页面的外观 -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <h1>你好，前端！👋</h1>
+    <p class="subtitle">一个最简单的 HTML + CSS + JS 示例</p>
+
+    <!-- 计数器区域 -->
+    <div class="counter">
+      <p>当前计数</p>
+      <span id="count">0</span>
+    </div>
+
+    <!-- 按钮区域 -->
+    <div class="buttons">
+      <button id="add-btn">+1</button>
+      <button id="reset-btn">清零</button>
+      <button id="color-btn">换个背景色</button>
+    </div>
+  </main>
+
+  <!-- 引入脚本：负责页面的交互逻辑 -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+/* 全局样式：去掉默认边距，统一盒模型 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 页面背景和居中布局 */
+body {
+  font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f0f4ff;
+  transition: background 0.4s ease;
+}
+
+/* 中间的白色卡片 */
+.card {
+  background: #ffffff;
+  padding: 48px 56px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.subtitle {
+  color: #888;
+  margin-bottom: 32px;
+}
+
+/* 计数器数字 */
+.counter p {
+  color: #666;
+  margin-bottom: 4px;
+}
+
+.counter span {
+  display: inline-block;
+  font-size: 56px;
+  font-weight: bold;
+  color: #4f7cff;
+  margin-bottom: 28px;
+}
+
+/* 按钮 */
+.buttons button {
+  padding: 10px 20px;
+  margin: 0 6px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #fff;
+  transition: transform 0.1s ease, opacity 0.2s ease;
+}
+
+.buttons button:active {
+  transform: scale(0.95);
+}
+
+#add-btn {
+  background: #4f7cff;
+}
+
+#reset-btn {
+  background: #ff6b6b;
+}
+
+#color-btn {
+  background: #2ec4b6;
+}
